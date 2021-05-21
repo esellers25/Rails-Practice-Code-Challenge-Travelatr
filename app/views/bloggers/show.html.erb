@@ -1,0 +1,6 @@
+<h2> <%=@blogger.name%> </h2>
+
+<h3>Total Likes: <%= @blogger.posts.sum(:likes)%></h3>
+
+<h3>"Featured Post:" <%= link_to @blogger.featured_post,  %>% </h3>
+
